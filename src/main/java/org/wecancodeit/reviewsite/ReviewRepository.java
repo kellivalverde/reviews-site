@@ -13,12 +13,13 @@ public class ReviewRepository {
 	private Map<Long, Review> reviewList = new HashMap<>();
 	private Review reviewOne = new Review(1L, "VooDoo Brewery: EctoCooler", "/images/green-beer.jpg", "Category: Experimental Sour", "Fruity, green, and kinda weird", "1/11/2020");
 	private Review reviewTwo = new Review(2L, "VooDoo Brewery: BBVDD Imperial Stout", "/images/VooDoo-BBVD-beer.jpg", "Category: Imperial Stout","Full-bodied, sweet, and high ABV", "2/2/2020");
-	
+	private Review reviewThree = new Review(3L, "VooDoo Brewery: KillaPilz", "/images/VooDoo-Pils-beer.jpg", "Category: Pilsner","Light and crisp, yellow color", "2/9/2020");
 	
 	
 	public ReviewRepository() {
 		reviewList.put(reviewOne.getId(), reviewOne);
 		reviewList.put(reviewTwo.getId(), reviewTwo);
+		reviewList.put(reviewThree.getId(), reviewThree);
 		
 	}
 
